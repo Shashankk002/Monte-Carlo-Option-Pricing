@@ -56,8 +56,9 @@ A Streamlit-based UI lets you explore the same model with adjustable parameters.
 
 ```bash
 streamlit run interactive_app.py
-
+```
 ---
+
 
 ## 🎯 What I Learned
 
