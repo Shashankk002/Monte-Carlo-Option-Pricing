@@ -18,29 +18,23 @@ and estimates the fair price of a **European call option** via **Monte Carlo sim
 ## 🧠 Key Concepts
 
 - **Call Option**: A contract giving the buyer the right (not obligation) to buy an asset at a fixed strike price in the future.  
-- **Payoff**: $ \max(S_T - K, 0) $ — the profit from the option at expiry.  
+- **Payoff**: `max(S_T - K, 0)` — the profit from the option at expiry.  
 - **Monte Carlo Simulation**: A technique to estimate expected outcomes by simulating many random futures.  
 - **Geometric Brownian Motion (GBM)**: A model of stock price movement that ensures prices stay positive and reflect volatility.  
-- **Discounting**: Bringing future value to present using $ e^{-rT} $.
+- **Discounting**: Bringing future value to present using `e^(-rT)`.
 
 ---
 
 ## 🧮 Math Behind It
 
 - **Stock price simulated using**:  
-  $$
-  S_t = S_0 \cdot \exp\left[\left(\mu - \frac{\sigma^2}{2}\right)t + \sigma W_t\right]
-  $$
+  `S_t = S_0 * exp[(μ - σ²/2)t + σW_t]`
 
 - **Payoff of each simulation**:  
-  $$
-  \text{Payoff} = \max(S_T - K, 0)
-  $$
+  `Payoff = max(S_T - K, 0)`
 
 - **Option price today**:  
-  $$
-  \text{Price} = e^{-rT} \cdot \mathbb{E}[\text{Payoff}]
-  $$
+  `Price = e^(-rT) * E[Payoff]`
 
 ---
 
