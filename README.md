@@ -48,6 +48,17 @@ and estimates the fair price of a **European call option** via **Monte Carlo sim
 
 ---
 
+## 🚀 Streamlit App (Interactive Version)
+
+A Streamlit-based UI lets you explore the same model with adjustable parameters.
+
+### ▶️ Run Locally:
+
+```bash
+streamlit run interactive_app.py
+
+---
+
 ## 🎯 What I Learned
 
 - How randomness can simulate uncertainty in financial markets  
